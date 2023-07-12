@@ -1,0 +1,16 @@
+CREATE DATABASES grocery;
+
+CREATE TABLE IF NOT EXISTS grocery.CustomerEnroll (
+    ID INT PRIMARY KEY,
+    NAME VARCHAR(50) NOT NULL,
+    ADDRESS VARCHAR(100),
+    MOBILE VARCHAR(20) NOT NULL,
+    GENDER VARCHAR(10),
+    DOB DATE,
+    AGE INT,
+    EMAIL VARCHAR(50),
+    REG_DATE DATE
+);
+
+INSERT INTO grocery.CustomerEnroll (ID, NAME, ADDRESS, MOBILE, GENDER, DOB, AGE, EMAIL, REG_DATE)
+VALUES (1, 'Jane Doe', '456 Main St', '555-1234', 'Female', '1995-01-01', 28, 'janedoe@gmail.com', '2023-04-02');
